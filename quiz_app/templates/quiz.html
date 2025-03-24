@@ -1,0 +1,182 @@
+<!-- templates/quiz.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python Knowledge Quiz</title>
+    <style>
+        :root {
+            --primary-color: #3498db;
+            --secondary-color: #2980b9;
+            --background-color: #f5f7fa;
+            --text-color: #34495e;
+            --highlight-color: #e74c3c;
+            --success-color: #2ecc71;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            padding: 0;
+            margin: 0;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding: 20px;
+            background-color: var(--primary-color);
+            color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        
+        h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+        
+        .quiz-description {
+            font-size: 1.1rem;
+            margin-top: 10px;
+        }
+        
+        form {
+            background-color: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        
+        .question-container {
+            margin-bottom: 30px;
+            padding: 20px;
+            border-left: 4px solid var(--primary-color);
+            background-color: rgba(52, 152, 219, 0.05);
+        }
+        
+        .question {
+            font-weight: 600;
+            font-size: 1.2rem;
+            margin-bottom: 15px;
+        }
+        
+        .options {
+            display: grid;
+            grid-gap: 10px;
+        }
+        
+        .option {
+            display: flex;
+            align-items: center;
+            padding: 10px 15px;
+            border: 1px solid #e1e1e1;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+        }
+        
+        .option:hover {
+            background-color: rgba(52, 152, 219, 0.1);
+            cursor: pointer;
+        }
+        
+        .option input[type="radio"] {
+            margin-right: 10px;
+        }
+        
+        .option label {
+            flex: 1;
+            cursor: pointer;
+        }
+        
+        .btn-submit {
+            background-color: var(--primary-color);
+            color: white;
+            border: none;
+            padding: 12px 30px;
+            font-size: 1.1rem;
+            border-radius: 4px;
+            cursor: pointer;
+            display: block;
+            margin: 30px auto 0;
+            transition: background-color 0.3s ease;
+        }
+        
+        .btn-submit:hover {
+            background-color: var(--secondary-color);
+        }
+        
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            font-size: 0.9rem;
+            color: #7f8c8d;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 15px;
+            }
+            
+            header {
+                padding: 15px;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+            
+            form {
+                padding: 20px;
+            }
+            
+            .question-container {
+                padding: 15px;
+            }
+            
+            .btn-submit {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Python Knowledge Quiz</h1>
+            <p class="quiz-description">Test your Python programming knowledge with these 10 questions</p>
+        </header>
+        
+        <form action="/submit" method="post">
+            {% for question_index in range(questions|length) %}
+                <div class="question-container">
+                    <div class="question">{{ question_index + 1 }}. {{ questions[question_index].question }}</div>
+                    <div class="options">
+                        {% for option_index in range(questions[question_index].options|length) %}
+                            <div class="option">
+                                <input type="radio" id="q{{ question_index }}_{{ option_index }}" name="question_{{ question_index }}" value="{{ questions[question_index].options[option_index] }}" required>
+                                <label for="q{{ question_index }}_{{ option_index }}">{{ questions[question_index].options[option_index] }}</label>
+                            </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            {% endfor %}
+            
+            <button type="submit" class="btn-submit">Submit Quiz</button>
+        </form>
+        
+        <footer>
+            <p>© 2025 Python Knowledge Quiz | Created with Flask</p>
+        </footer>
+    </div>
+</body>
+</html>
