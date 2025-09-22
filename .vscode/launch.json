@@ -5,6 +5,69 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "type": "java",
+            "name": "CircleMain",
+            "request": "launch",
+            "mainClass": "CircleMain",
+            "projectName": "Code_b2393f75"
+        },
+        {
+            "type": "java",
+            "name": "Person",
+            "request": "launch",
+            "mainClass": "Person",
+            "projectName": "Code_b2393f75"
+        },
+        {
+            "type": "java",
+            "name": "AVG",
+            "request": "launch",
+            "mainClass": "AVG",
+            "projectName": "Code_b2393f75"
+        },
+        {
+            "type": "java",
+            "name": "Calc",
+            "request": "launch",
+            "mainClass": "Calc",
+            "projectName": "Code_b2393f75"
+        },
+        {
+            "type": "java",
+            "name": "Shape",
+            "request": "launch",
+            "mainClass": "Shape",
+            "projectName": "Code_b2393f75"
+        },
+        {
+            "type": "java",
+            "name": "Root",
+            "request": "launch",
+            "mainClass": "Root",
+            "projectName": "Code_b2393f75"
+        },
+        {
+            "type": "java",
+            "name": "distance",
+            "request": "launch",
+            "mainClass": "distance",
+            "projectName": "Code_b2393f75"
+        },
+        {
+            "type": "java",
+            "name": "ComplexNo",
+            "request": "launch",
+            "mainClass": "ComplexNo",
+            "projectName": "Code_b2393f75"
+        },
+        {
+            "type": "java",
+            "name": "trial",
+            "request": "launch",
+            "mainClass": "trial",
+            "projectName": "Code_b2393f75"
+        },
+        {
             "name": "(Windows) Launch",
             "type": "cppvsdbg",
             "request": "launch",

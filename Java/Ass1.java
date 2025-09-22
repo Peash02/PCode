@@ -1,6 +1,5 @@
 package Java;
 import java.util.Scanner;
-
 public class Ass1
 {
     public static void main(String[]args)

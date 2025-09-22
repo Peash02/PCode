@@ -1,0 +1,132 @@
+  .tahoma
+  {
+    font-family: Tahoma;
+    font-weight: bold;
+  }
+  .deal
+  {
+    font-family: Arial;
+    font-weight: bold;
+    font-size:20px
+  }
+  .sale
+  {
+    color:red;
+    font-weight:lighter;
+    font-style: italic;
+  }
+  .course
+  {
+    font-family: Verdana;
+    width : 280px;
+    line-height: 22px;
+  }
+  .title
+  {
+    font-weight:bold;
+  }
+  .diff
+  {
+    font-size :16px;
+    color:gray;
+  }
+  .gs
+  {
+    background-color: green;
+    color : white;
+    border:none;
+    padding:6px 15px;
+    border-radius:4px;
+  }
+  .app
+  {
+    font-family:Arial;
+    text-align: center;
+    line-height:45px;
+  }
+  .titlee
+  {
+    font-weight:bold;
+    font-size:30px;
+  }
+  .learn
+  {
+    color:rgb(70, 113, 200);
+    cursor : pointer;
+  }
+  .learn:hover{
+    text-decoration: underline;
+  }
+
+  .macc
+  {
+    text-align: center;
+    font-family: Arial;
+    line-height: 35px;
+  }
+  .new
+  {
+    color:red;
+  }
+  .mac
+  {
+    font-weight:bold;
+    font-size:20px;
+  }
+  .super
+  {
+    font-weight:bold;
+    font-size:30px;
+  }
+  .btn
+  {
+    background-color: rgb(13, 114, 202);
+    color : white;
+    border:none;
+    padding: 6px 14px;
+    border-radius:14px; 
+  }
+  .stock
+  {
+    font-family: Arial;
+    line-height: 22px;
+    color:gray;
+  }
+  .dol
+  {
+    font-size:30px;
+    color:black;
+  }
+  .cur
+  {
+    font-size: 14px;
+    color:gray;
+    margin-left:8px;
+  }
+  .green
+  {
+    color:rgb(5, 82, 5);
+  }
+  .red
+  {
+    color:red
+  }
+  .cmp
+  {
+    font-family: Arial;
+    line-height: 22px;
+    width : 500px;
+  }
+  .acc
+  {
+    font-weight:bold;
+  }
+  .usr
+  {
+    color:gray;
+  }
+  .ref
+  {
+    color:rgb(27, 157, 205);
+    cursor:pointer;
+  }

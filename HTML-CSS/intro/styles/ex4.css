@@ -1,0 +1,36 @@
+.c
+{
+   font-family: Arial;
+    width : 150px;
+    height:230px;
+    display:inline-block;
+    box-shadow: 0px 2px 8px rgba(128, 128, 128, 0.705);
+    margin-left:10px;
+    line-height: 14px;
+}
+.img
+{
+    width:150px;
+    border-radius: 2px;
+
+}
+.name
+{
+    padding-left:6px;
+    font-weight:bold;
+}
+.frnds
+{
+    padding-left: 6px;
+    color:gray
+}
+.add
+{
+    margin-left:6px;
+    background-color: rgb(13, 114, 202);
+    border:none;
+    color:white;
+    padding:8px 15px;
+    border-radius:4px;
+
+}

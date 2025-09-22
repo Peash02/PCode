@@ -1,0 +1,167 @@
+.header
+{
+    display:flex;
+    height:60px;
+    justify-content: space-between;
+    
+    position: fixed;
+    top:0;
+    right:0;
+    left:0;
+
+    background-color: white;
+
+    border-bottom-width:1px;
+    border-bottom-style:solid;
+    border-bottom-color:rgb(223, 221, 221);
+
+    z-index:100;
+
+}
+.left-section
+{
+    display:flex;
+    align-items: center;
+
+}
+.ham-menu
+{
+    height:24px;   
+    margin:20px 20px;
+    cursor:pointer;
+}
+.yt-logo
+{
+    height:20px;
+    cursor:pointer;
+}
+.middle-section
+{
+    flex:1;
+    margin-left:320px;
+    margin-right:250px;
+    max-width:430px;
+    display:flex;
+    align-items: center;
+}
+
+.searchbox
+{
+  border-color:rgb(215, 212, 212);
+  border-width: 1px;
+  border-style: solid;
+  flex:1;
+  height:30px;
+  border-radius:2px;
+  box-shadow:inset 1px 2px 3px rgba(0,0,0,0.15);
+  font-size:16px;
+  width:0;
+}
+.searchbox::placeholder
+{
+    font-family: Roboto,Arial;
+    font-size:16px;
+    padding-left:10px;
+
+}
+.search-img
+{
+    height:22px;
+
+}
+.search-button
+{
+    height:34px;
+    width:54px;
+    border-color:rgb(215, 212, 212);
+    border-style:solid;
+    border-width:1px;
+    margin-left:-1px;
+}
+.search-button,.voice-search,.upload,.ytapps,.notification
+{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    position:relative;
+    
+}
+.search-button .tooltip,
+.voice-search .tooltip,.upload .tooltip,.ytapps .tooltip,.notification .tooltip
+{
+    font-family:Robot,Arial;
+    position:absolute;
+    background-color:gray;
+    color:white;
+    font-size:12px;
+    padding:6px 5px;
+    bottom:-34px;
+    border-radius:2px;
+    opacity:0;
+    pointer-events:none;
+    transition:opacity 0.15s;
+    white-space: nowrap;
+
+}
+.search-button:hover .tooltip,
+.voice-search:hover .tooltip,.upload:hover,.ytapps:hover,.notification:hover
+{
+    opacity:1;
+}
+.voice-search
+{
+    height:34px;
+    width:54px;
+    border:none;
+    border-radius:22px;
+}
+.voice-img
+{
+    height:22px;
+}
+
+
+.right-section
+{
+    width:190px;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-shrink:0;
+}
+.upload-icon
+{
+    height:22px;
+}
+.ytapp-icon
+{
+    height:22px;
+}
+.notif-icon
+{
+    height:22px;
+}
+.notification
+{
+    position:relative;
+}
+.notif-count
+{
+    position:absolute;
+    top:-3px;
+    right:-4px;
+    background-color:red;
+    color:white;
+    font-size:10px;
+    padding:2px 5px;
+    border-radius:12px;
+    font-family:Roboto,Arial;
+
+}
+.profile-pic
+{
+    height:30px;
+    margin-right:20px;
+    border-radius:14px;
+
+}

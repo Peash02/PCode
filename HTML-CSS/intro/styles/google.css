@@ -1,0 +1,36 @@
+.logo
+{
+    text-align:center;
+    margin-top:300px;
+
+}
+.s
+{
+    text-align:center;
+
+}
+.search
+{
+    border:none;
+    box-shadow: 0px 1px 0px 0px rgba(0,0,0,0.2);
+    width:250px;
+    height:25px;
+    margin-top:25px;
+    margin-bottom:25px;
+}
+.btns
+{
+    text-align: center;
+}
+.gsearch
+{
+    font-family: Arial;
+    border:none;
+    font-weight:bold;
+}
+.flucky
+{
+    font-family:Arial;
+    border:none;
+    font-weight:bold;
+}

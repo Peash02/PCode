@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Youtube</title>
+    
+    <link rel = "stylesheet" href = "styles/vid.css">
+    <link rel = "stylesheet" href = "styles/header.css">
+    <link rel = "stylesheet" href = "styles/gen.css">
+    <link rel = "stylesheet" href = "styles/sidebar.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class = "header">
+      <div class = "left-section">
+        <img class = "ham-menu" src = icons/hamburger-menu.svg alt="ham">
+        <img class = 'yt-logo' src = icons/youtube-logo.svg alt="yt">
+      </div>
+      <div class = "middle-section">
+        <input class = "searchbox" type = "text" placeholder = "Search">
+        <button class = 'search-button'>
+          <img class = 'search-img'src=icons/search.svg>
+          <div class = "tooltip">Search</div>
+        </button>
+        <button class = 'voice-search'>
+          <img class = 'voice-img'src=icons/voice-search-icon.svg>
+          <div class = "tooltip">Search with your voice</div>
+        </button>
+      </div>
+      <div class = "right-section">
+        <divc class = "upload">
+          <img class = 'upload-icon'src="icons/upload.svg" alt="upload">
+          <div class = "tooltip">Create</div>
+        </div>
+        <div class = ytapps>
+          <img class = 'ytapp-icon' src="icons/youtube-apps.svg" alt = 'apps'>
+          <div class = "tooltip">YouTube apps</div>
+        </div>
+        <div class="notification">
+          <img class = 'notif-icon' src = 'icons/notifications.svg' alt = 'notifications'>
+          <div class = 'notif-count'>3</div>
+          <div class = "tooltip">Notifications</div>
+        </div>
+        <img class = 'profile-pic' src = 'icons/my-channel.jpeg' alt = 'profile'>
+      </div>
+    </div>
+
+
+    <div class = 'sidebar'>
+      <div class="sidebar-icons">
+        <img class="home-icon" src="icons/home.svg" alt="home">
+        <div>Home</div>
+      </div>
+      <div class = "sidebar-icons">
+        <img class ="explore-icon" src="icons/explore.svg" alt = "explore">
+        <div>Explore</div>
+      </div>
+      <div class = "sidebar-icons">
+        <img class = 'sub-icon' src="icons/subscriptions.svg" alt = "subscriptions">
+        <div>Subscriptions</div>
+      </div>
+      <div class = "sidebar-icons">
+        <img class = 'orig-icon' src="icons/originals.svg" alt = "originals">
+        <div>Originals</div>
+      </div>
+      <div class = "sidebar-icons">
+        <img class = 'ytmusic-icon' src="icons/youtube-music.svg" alt = "youtube-music">
+        <div>YouTube Music</div>
+      </div>
+      <div class = "sidebar-icons">
+        <img class = 'lib-icon' src="icons/library.svg" alt = "library">
+        <div>Library</div>
+      </div>
+    </div>
+
+
+    <div class = "video-grid">
+      <div class = "vid-prev">
+        <div class = 'thumb-row'>
+          <img class = 'thumbnail' src="thumbnails/thumbnail-1.webp" alt="Thumbnail 1">
+          <div class = 'time'>14:20</div>
+        </div>
+        <div >
+          <div class = 'channel-img'>
+            <img class = ch-pic src="channels/channel-1.jpeg">
+          </div>
+          <div class = 'vid-info'>
+            <p class = 'vid-title'>Talking Tech and AI with Google CEO Sundar Pichai!</p>
+            <p class = 'name'>Marquess Brownlee</p>   
+            <p class = 'stats'>3.4M views &#183; 6 months ago</p>
+          </div>
+        </div> 
+      </div>
+      <div class = "vid-prev">
+        <div class = 'thumb-row'>
+          <img class = 'thumbnail' src="thumbnails/thumbnail-2.webp" alt="Thumbnail 2">
+          <div class = 'time'>8:22</div>
+        </div>
+        <div>
+          <div class = 'channel-img'>
+            <img class = ch-pic src="channels/channel-2.jpeg">
+          </div>
+          <div class = 'vid-info'>
+            <p class = 'vid-title'>Try Not to Laugh Challenge #9</p>
+            <p class = 'name'>Markiplier</p>   
+            <p class = 'stats'>19M views &#183; 4 years ago</p>
+          </div>
+        </div> 
+      </div>
+      <div class = "vid-prev">
+        <div class = 'thumb-row'>
+          <img class = 'thumbnail' src="thumbnails/thumbnail-3.webp" alt="Thumbnail 3">
+          <div class = 'time'>9:13</div>  
+        </div>
+        <div>
+          <div class = 'channel-img'>
+            <img class = ch-pic src="channels/channel-3.jpeg">
+          </div>
+          <div class = 'vid-info'>
+            <p class = 'vid-title'>Crazy Tik Toks Taken Moments Before DISASTER</p>
+            <p class = 'name'>SSSniperWolf</p>   
+            <p class = 'stats'>12M views &#183; 1 year ago</p>
+          </div>
+        </div> 
+      </div>
+      <div class = "vid-prev">
+        <div class = 'thumb-row'>
+          <img class = 'thumbnail' src="thumbnails/thumbnail-4.webp" alt="Thumbnail 4">
+          <div class = 'time'>22:09</div>
+        </div>
+        <div>
+          <div class = 'channel-img'>
+            <img class = ch-pic src="channels/channel-4.jpeg">
+          </div>
+          <div class = 'vid-info'>
+            <p class = 'vid-title'>The Simplest Math Problem No One Can Solve - Collatz Conjecture</p>
+            <p class = 'name'>Veritasium</p>   
+            <p class = 'stats'>18M views &#183; 4 months ago</p>
+          </div>
+        </div> 
+      </div>
+      <div class = "vid-prev">
+        <div class = 'thumb-row'>
+          <img class = 'thumbnail' src="thumbnails/thumbnail-5.webp" alt="Thumbnail 5">
+          <div class = 'time'>11:17</div>
+        </div>
+        <div>
+          <div class = 'channel-img'>
+            <img class = ch-pic src="channels/channel-5.jpeg">
+          </div>
+          <div class = 'vid-info'>
+            <p class = 'vid-title'>Kadane's Algorithm to Maximum Sum Subarray Problem</p>
+            <p class = 'name'>CS Dojo</p>   
+            <p class = 'stats'>519K views &#183; 5 years ago</p>
+          </div>
+        </div> 
+      </div>
+      <div class = "vid-prev">
+        <div class = 'thumb-row'>
+          <img class = 'thumbnail' src="thumbnails/thumbnail-6.webp" alt="Thumbnail 6">
+          <div class = 'time'>19:59</div>
+        </div>
+        <div>
+          <div class = 'channel-img'>
+            <img class = ch-pic src="channels/channel-6.jpeg">
+          </div>
+          <div class = 'vid-info'>
+            <p class = 'vid-title'>Anything You Can Fit In The Circle I’ll Pay For</p>
+            <p class = 'name'>MrBeast</p>   
+            <p class = 'stats'>141M views &#183; 1 year ago</p>
+          </div>
+        </div> 
+      </div>
+      <div class = "vid-prev">
+        <div class = 'thumb-row'>
+          <img class = 'thumbnail' src="thumbnails/thumbnail-7.webp" alt="Thumbnail 7">
+          <div class = 'time'>10:13</div>
+        </div>
+        <div>
+          <div class = 'channel-img'>
+            <img class = ch-pic src="channels/channel-7.jpeg">
+          </div>
+          <div class = 'vid-info'>
+            <p class = 'vid-title'>Why Planes Don't Fly Over Tibet</p>
+            <p class = 'name'>RealLifeLore</p>   
+            <p class = 'stats'>6.6M views &#183; 1 year ago</p>
+          </div>
+        </div> 
+      </div>
+      <div class = "vid-prev">
+        <div class = 'thumb-row'>
+          <img class = 'thumbnail' src="thumbnails/thumbnail-8.webp" alt="Thumbnail 8">
+          <div class = 'time'>7:12</div>
+        </div>
+        <div>
+          <div class = 'channel-img'>
+            <img class = ch-pic src="channels/channel-6.jpeg">
+          </div>
+          <div class = 'vid-info'>
+            <p class = 'vid-title'>Inside The World's Biggest Passenger Plane</p>
+            <p class = 'name'>Tech Vision</p>   
+            <p class = 'stats'>3.7M views &#183; 10 Months ago</p>
+          </div>
+        </div> 
+      </div>
+      <div class = "vid-prev">
+        <div class = 'thumb-row'>
+          <img class = 'thumbnail' src="thumbnails/thumbnail-9.webp" alt="Thumbnail 9">
+          <div class = 'time'>13:17</div>
+        </div>
+        <div>
+          <div class = 'channel-img'>
+            <img class = ch-pic src="channels/channel-9.jpeg">
+          </div>
+          <div class = 'vid-info'>
+            <p class = 'vid-title'>The SECRET to Super Human STRENGTH</p>
+            <p class = 'name'>ThenX</p>   
+            <p class = 'stats'>20M views &#183; 3 years ago</p>
+          </div>
+        </div> 
+      </div>
+      <div class = "vid-prev">
+        <div class = 'thumb-row'>
+          <img class = 'thumbnail' src="thumbnails/thumbnail-10.webp" alt="Thumbnail 10">
+          <div class = 'time'>7:53</div>
+        </div>
+        <div>
+          <div class = 'channel-img'>
+            <img class = ch-pic src="channels/channel-10.jpeg">
+          </div>
+          <div class = 'vid-info'>
+            <p class = 'vid-title'>How The World's Largest Cruise Ship Makes 30,000 Meals Every Day</p>
+            <p class = 'name'>Buisness Insider</p>   
+            <p class = 'stats'>14M views &#183; 1 year ago</p>
+          </div>
+        </div> 
+      </div>
+      <div class = "vid-prev">
+        <div class = 'thumb-row'>
+          <img class = 'thumbnail' src="thumbnails/thumbnail-11.webp" alt="Thumbnail 11">
+          <div class = 'time'>4:10</div>
+        </div>
+        <div>
+          <div class = 'channel-img'>
+            <img class = ch-pic src="channels/channel-11.jpeg">
+          </div>
+          <div class = 'vid-info'>
+            <p class = 'vid-title'>Dubai's Crazy Underwater Train and Other Things #Only in Dubai</p>
+            <p class = 'name'>Destination Tips</p>   
+            <p class = 'stats'>3M views &#183; 1 year ago</p>
+          </div>
+        </div> 
+      </div>
+      <div class = "vid-prev">
+        <div class = 'thumb-row'>
+          <img class = 'thumbnail' src="thumbnails/thumbnail-12.webp" alt="Thumbnail 12">
+          <div class = 'time'>4:51</div>
+        </div>
+        <div>
+          <div class = 'channel-img'>
+            <img class = ch-pic src="channels/channel-12.jpeg">
+          </div>
+          <div class = 'vid-info'>
+            <p class = 'vid-title'>What would happen if you didn’t drink water? - Mia Nacamulli</p>
+            <p class = 'name'>TED-Ed</p>   
+            <p class = 'stats'>12M views &#183; 5 years ago</p>
+          </div>
+        </div> 
+      </div>
+    </div>
+    
+
+
+  </body>
+</html>
