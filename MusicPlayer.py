@@ -1,3 +1,4 @@
+import time
 class Node:
     def __init__(self,data):
         self.data = data
@@ -13,6 +14,7 @@ class MusicPlayer:
         
         if self.head is None:
             self.head = new_node
+            print(f"Inserted {song} to Playlist.")
             return
         
         current = self.head
@@ -32,6 +34,7 @@ class MusicPlayer:
         
         if self.head.data == song:
             self.head = self.head.next
+            print(f"Deleted {song} from Playlist.")
             return
 
         while current:
@@ -50,17 +53,15 @@ class MusicPlayer:
         
         if self.head.next is None:
             return f"Current song:{self.head.data}"
-        
-        current = self.head
-        old_head = self.head
-        while current.next:
-            current = current.next
-    
-        current.prev.next = None
-        current.prev = None
-        current.next = old_head
-        old_head.prev = current
-        self.head = current
+
+        temp = self.head
+        while temp.next:
+            temp = temp.next
+        temp.next = self.head
+        self.head.prev = temp
+        self.head.next.prev = None
+        self.head = self.head.next
+        temp.next.next = None
 
         return f"Current song:{self.head.data}"
     
@@ -68,17 +69,24 @@ class MusicPlayer:
         if self.head is None:
             return "Playlist is Empty!!!"
         
-        old_head = self.head
-        current = self.head
-        while current.next:
-            current = current.next
+        if self.head.next is None:
+            return f"Current song:{self.head.data}"
+        
+        temp = self.head
+        while temp.next:
+            temp = temp.next
+        temp.next = self.head
+        temp.prev.next = None
+        temp.prev = None
+        self.head.prev = temp
+        self.head = temp 
 
-        self.head = current
-        old_head.next = None
-        old_head.prev = current.prev
-        current.prev.next = old_head
-        current.prev = None
-
+        return f"Current Song:{self.head.data}"
+    
+    def current_song(self):
+        if self.head is None:
+            return "Playlist is Empty!!!"
+        
         return f"Current Song:{self.head.data}"
     
     def show_playlist(self):
@@ -95,20 +103,42 @@ class MusicPlayer:
 
 if __name__ == "__main__":
     mp = MusicPlayer()
-    mp.add_song("As it was")
-    mp.add_song("Watermelong Sugar")
-    mp.add_song("Shape of you")
-    mp.add_song("Limbo")
-
-    mp.show_playlist()
-
-    mp.delete_song("As it was")
-    mp.show_playlist()
-
-    mp.next_song()
-    mp.show_playlist()
-
-    mp.previous_song()
-    mp.show_playlist()
+    while True:
+        time.sleep(1)
+        print("------------")
+        print("MUSIC PLAYER")
+        print("------------")
+        time.sleep(0.6)
+        print("1.Add Song\n2.Delete Song\n3.Next Song\n4.Previous Song\n5.Show Playlist\n6.Show Current Playing Song\n7.Exit")
+        print("------------")
+        time.sleep(0.6)
+        x = int(input("Enter Your Choice:"))
+        print("------------")
+        if x == 1:
+            song = input("Enter Song Name:")
+            mp.add_song(song)
+            print("------------")
+        elif x == 2:
+            song = input("Enter Song Name:")
+            mp.delete_song(song)
+            print("------------")
+        elif x == 3:
+            print(mp.next_song())
+            print("------------")
+        elif x == 4:
+            print(mp.previous_song())
+            print("------------")
+        elif x == 5:
+            mp.show_playlist()
+            print("------------")
+        elif x == 6:
+            print(mp.current_song())
+            print("------------")
+        elif x == 7:
+            print("Thank You!!!\U0001F642")
+            print("------------")
+            break
+        else:
+            print("Invalid Choice")
             
             
